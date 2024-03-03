@@ -5,9 +5,9 @@ import "node_modules/@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "node_modules/@openzeppelin/contracts/access/Ownable.sol";
 import "node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
-/// @title DynamicNFT - A dynamic non-fungible token contract with loyalty rewards.
+/// @title HermesNFT - A dynamic non-fungible token contract with loyalty rewards.
 /// @dev This contract extends the ERC721 standard and allows for the minting of dynamic NFTs.
-contract DynamicNFT is ERC721, Ownable {
+contract HermesNFT is ERC721, Ownable {
     uint256 public loyaltyLevel;
     uint256 public constant TOKENS_FOR_LEVEL_2 = 10;
     uint256 public constant TOKENS_FOR_LEVEL_3 = 30;
@@ -16,7 +16,7 @@ contract DynamicNFT is ERC721, Ownable {
     // Event to track loyalty level upgrades
     event LoyaltyLevelUpgrade(address indexed user, uint256 newLevel);
 
-    /// @dev Constructor to initialize the DynamicNFT contract.
+    /// @dev Constructor to initialize the HermesNFT contract.
     /// @param _name The name of the NFT.
     /// @param _symbol The symbol of the NFT.
     /// @param _tokenAddress The address of the ERC20 token used for rewards.
